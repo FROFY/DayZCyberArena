@@ -1,0 +1,21 @@
+.card {
+    margin-top: 85px;
+    display: flex;
+}
+.head {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.about_text {
+    width: 754px;
+    font-size: 24px;
+    font-weight: 250;
+}
+.about_text_inner {
+    width: 754px;
+
+    &:not(&:last-child) {
+        margin-bottom: 30px;
+    }
+}
