@@ -1,5 +1,6 @@
 .header_inner {
     display: flex;
+    justify-content: space-between;
     height: 80px;
     align-items: center;
 }
@@ -11,15 +12,31 @@
     &:not(:last-child) {
         margin-right: 32px;
     }
+    &::after {
+        background-color: #d0ff00;
+        display: block;
+        content: "";
+        height: 2px;
+        width: 0%;
+        -webkit-transition: width .3s ease-in-out;
+        -moz--transition: width .3s ease-in-out;
+        transition: width .3s ease-in-out;
+    }
+    &:focus::after, &:hover::after {
+        width: 100%;
+    }
     font-size: 20px;
     text-decoration: none;
 }
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 127px;
+    // margin-right: 127px;
     font-size: 36px;
     font-weight: 500;
+    &:hover {
+        user-select: none;
+    }
     
     div {
         margin-left: 26px;
@@ -28,7 +45,7 @@
 .btn {
     display: flex;
     align-items: center;
-    margin-left: 184px;
+    // margin-left: 184px;
     width: 152.94px;
     height: 54.82px;
     background: #FF3D00;
@@ -38,8 +55,12 @@
 
     &:hover {
         background-color: #ff3c00b9;
+        user-select: none;
+        cursor: pointer;
     }
 }
 .header {
     background: rgba(0, 0, 0, 0.29);
+    // position: fixed;
+    // width: 1920px;
 }

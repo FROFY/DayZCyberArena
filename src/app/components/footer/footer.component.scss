@@ -1,0 +1,11 @@
+.footer_inner {
+    background: rgba(0, 0, 0, 0.29);
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+    height: 80px;
+    user-select: none;
+}

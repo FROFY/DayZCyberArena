@@ -1,1 +1,23 @@
-<p>site-card works!</p>
+<div class="container">
+  <div class="card" [style]="siteCard.flexStyle">
+    <div class="img">
+      <img [src]="siteCard.pictureSource">
+    </div>
+    <div [style]="siteCard.textAlign">
+      <div class="head">
+        {{ siteCard.textHeader }}
+      </div>
+      <div class="about_text">
+        <div class="about_text_inner">
+          {{ siteCard.textArray.firstText }}
+        </div>
+        <div class="about_text_inner">
+          {{ siteCard.textArray.secondText }}
+        </div>
+        <div class="about_text_inner">
+          {{ siteCard.textArray.thirdText }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
