@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SiteCard } from '../../models/site-card/site-card';
+import { SiteCard } from '../../../models/site-card/site-card';
 
 @Component({
   selector: 'app-site-card',

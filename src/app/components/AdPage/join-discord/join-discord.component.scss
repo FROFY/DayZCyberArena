@@ -6,15 +6,25 @@
     font-size: 32px;
     text-align: center;
     margin: 0 auto;
+    @media(width < 1600px) {
+        max-width: 1300px;
+    }
 }
 .head {
     font-weight: 700;
     margin-bottom: 50px;
+    @media(width < 1600px) {
+        font-weight: 600;
+        font-size: 27px;
+    }
 }
 .invite {
     font-weight: 500;
     margin-bottom: 65px;
     max-width: 1300px;
+    @media(width < 1600px) {
+        font-weight: 400;
+    }
 }
 .discord {
     margin-top: 130px;
@@ -24,6 +34,9 @@
         &:hover {
             opacity: 0.8;
             transition: 0.1s;
+        }
+        @media(width < 1600px) {
+            width: 90%;
         }
     }
 }

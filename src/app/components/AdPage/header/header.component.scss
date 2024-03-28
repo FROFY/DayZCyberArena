@@ -6,12 +6,13 @@
 }
 .links {
     display: flex;
-    align-items: center;
+    min-width: 800px;
+    justify-content: space-around;
 }
 .links_inner {
-    &:not(:last-child) {
-        margin-right: 32px;
-    }
+    // &:not(:last-child) {
+    //     margin-right: 32px;
+    // }
     &::after {
         background-color: #d0ff00;
         display: block;
@@ -27,11 +28,13 @@
     }
     font-size: 20px;
     text-decoration: none;
+    @media(width < 1600px) {
+        font-size: 18px;
+    }
 }
 .logo {
     display: flex;
     align-items: center;
-    // margin-right: 127px;
     font-size: 36px;
     font-weight: 500;
     &:hover {
@@ -40,12 +43,15 @@
     
     div {
         margin-left: 26px;
+        @media(width < 1600px) {
+            margin-left: 15px;
+            font-size: 30px;
+        }
     }
 }
 .btn {
     display: flex;
     align-items: center;
-    // margin-left: 184px;
     width: 152.94px;
     height: 54.82px;
     background: #FF3D00;
@@ -58,9 +64,12 @@
         user-select: none;
         cursor: pointer;
     }
+    @media(width < 1600px) {
+        font-size: 15px;
+        width: 124px;
+        height: 47px;
+    }
 }
 .header {
     background: rgba(0, 0, 0, 0.29);
-    // position: fixed;
-    // width: 1920px;
 }
