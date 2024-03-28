@@ -1,0 +1,37 @@
+.card {
+    margin-top: 85px;
+    display: flex;
+}
+.head {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    min-width: 300px;
+    @media(width < 1600px) {
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+.about_text {
+    max-width: 754px;
+    font-size: 24px;
+    font-weight: 250;
+    @media(width < 1600px) {
+        font-size: 19px;
+    }
+}
+.about_text_inner {
+    max-width: 754px;
+
+    &:not(&:last-child) {
+        margin-bottom: 30px;
+    }
+}
+.img {
+    img {
+        @media(width < 1600px) {
+            max-width: 800px;
+            // width: 95%;
+        }
+    }
+}

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { SiteCardComponent } from '../site-card/site-card.component';
-import { JoinDiscordComponent } from '../../join-discord/join-discord.component';
+import { JoinDiscordComponent } from '../join-discord/join-discord.component';
 import { FooterComponent } from '../footer/footer.component';
-import { SiteCard } from '../../models/site-card/site-card';
+import { SiteCard } from '../../../models/site-card/site-card';
 import { NgFor } from '@angular/common';
 
 @Component({
