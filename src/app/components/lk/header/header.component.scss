@@ -1,0 +1,67 @@
+.img {
+    width: 50px;
+    height: 50px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    div {
+        margin-left: 15px;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.navBar {
+    display: flex;
+    min-width: 670px;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    div {
+        cursor: pointer;
+    }
+}
+
+.btnPay {
+    display: flex;
+    align-items: center;
+    
+    div {
+        margin-left: 30px;
+    }
+}
+
+
+.lineHeader {
+    max-width: 1420px;
+    height: 0px;
+    border: thin white solid;
+    margin-top: 10px;
+}
+
+.navBar_inner {
+    &::after {
+        background-color: #d0ff00;
+        display: block;
+        content: "";
+        height: 2px;
+        width: 0%;
+        -webkit-transition: width .3s ease-in-out;
+        -moz--transition: width .3s ease-in-out;
+        transition: width .3s ease-in-out;
+    }
+    
+    &:focus::after,
+    &:hover::after {
+        width: 100%;
+    }
+}

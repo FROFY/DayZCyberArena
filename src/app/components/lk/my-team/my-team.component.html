@@ -1,0 +1,16 @@
+<div class="containerLk">
+  <div class="title">Моя команда</div>
+  <div class="teamContainer">
+    <div class="me">
+      <app-teammate-card
+        [name]="myName"
+      ></app-teammate-card>
+    </div>
+    <div class="teammates">
+      <app-teammate-card
+        *ngFor="let name of items"
+        [name]="name"
+      ></app-teammate-card>
+    </div>
+  </div>
+</div>
