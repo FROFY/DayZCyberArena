@@ -1,0 +1,31 @@
+.teamMateCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 26px;
+    border: 1px solid white;
+    min-height: 350px;
+    min-width: 268px;
+    border-radius: 30px;
+    background-color: rgba(0, 110, 255, 0.308);
+
+    &:hover {
+        background-color: rgba(0, 110, 255, 0.514);
+        cursor: pointer;
+    }
+
+    
+}
+
+.img {
+    width: 206px;
+    height: 206px;
+
+    margin-top: 25px;
+}
+
+.name {
+    margin-top: 64px;
+    margin-bottom: 25px;
+}

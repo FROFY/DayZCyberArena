@@ -1,0 +1,10 @@
+<div class="containerLk">
+  <div class="title">Мои турниры</div>
+  <div class="tours">
+    <app-my-tour-card
+    *ngFor="let tour of myTours"
+    [myTourCard]="tour"
+    >
+  </app-my-tour-card>
+</div>
+</div>

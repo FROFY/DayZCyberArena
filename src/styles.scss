@@ -22,10 +22,20 @@
     }
 }
 
+.containerLk {
+    max-width: 1420px;
+    margin: auto;
+    font-weight: 300;
+
+    @media(width < 1425px) {
+        max-width: 1200px;
+    }
+}
+
 body {
     background: linear-gradient(253deg, #A50000 0%, #1E1D3F 64%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    height: 3360px;
+    // height: 3360px;
 }

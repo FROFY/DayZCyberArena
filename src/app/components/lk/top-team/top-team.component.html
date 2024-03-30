@@ -1,0 +1,11 @@
+<div class="containerLk">
+  <div class="title">
+    Топ команд
+  </div>
+  <div class="teamContainer">
+    <app-top-team-card
+      *ngFor="let team of topTeams"
+      [team]="team"
+    ></app-top-team-card>
+  </div>
+</div>
